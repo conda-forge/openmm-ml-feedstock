@@ -10,19 +10,19 @@ source:
   git_rev: 5b577c2586232d3ac6f41de064d3290619b2a8aa
 
 build:
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
+  skip: true  # [win]
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
     - numpy
     - openmm >=7.7 # TODO https://conda-forge.org/docs/maintainer/knowledge_base.html#creating-a-pre-release-build once merged into a feedstock, depend on dev for now
-    - python >=3.6
-    - nnpops
+    - python
+    - nnpops  # [linux]
     - openmm-torch
 
 test:
