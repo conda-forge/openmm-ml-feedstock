@@ -1,4 +1,4 @@
 channel_targets:
-- conda-forge openmm_rc
+  - conda-forge openmm_rc
 channel_sources:
-  - conda-forge/label/openmm-torch_rc,conda-forge,defaults
+  - conda-forge/label/openmm_rc,conda-forge/label/openmm-torch_rc,conda-forge,defaults
