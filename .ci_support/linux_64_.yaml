@@ -1,7 +1,9 @@
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge/label/openmm_rc,conda-forge/label/openmm-torch_rc,conda-forge
+- conda-forge
+- conda-forge/label/openmm-torch_rc
+- conda-forge/label/openmm_rc
 channel_targets:
 - conda-forge openmm_rc
 docker_image:
