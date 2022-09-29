@@ -15,12 +15,12 @@ build:
   number: 0
 
 requirements:
-  host:
-    - pip
-    - python >=3.6
   build:
     - openmm ==8.0.0beta
     - openmm-torch ==1.0beta
+  host:
+    - pip
+    - python >=3.6
   run:
     - numpy
     - openmm ==8.0.0beta
