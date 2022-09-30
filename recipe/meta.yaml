@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - numpy
     - openmm ==8.0.0beta # TODO https://conda-forge.org/docs/maintainer/knowledge_base.html#creating-a-pre-release-build once merged into a feedstock, depend on dev for now
-    - python >=3.6
+    - python >=3.8
     - openmm-torch
 
 test:
