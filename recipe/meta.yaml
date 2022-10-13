@@ -1,5 +1,5 @@
 {% set name = "openmm-ml" %}
-{% set version = "0.0.1" %}
+{% set version = "1.0beta" %}
 
 package:
   name: {{ name|lower }}
@@ -11,19 +11,18 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
-  skip: true  # [win]
+  number: 0
+  noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
   run:
     - numpy
-    - openmm >=7.7 # TODO https://conda-forge.org/docs/maintainer/knowledge_base.html#creating-a-pre-release-build once merged into a feedstock, depend on dev for now
-    - python
-    - nnpops  # [linux]
-    - openmm-torch
+    - openmm ==8.0.0beta # TODO https://conda-forge.org/docs/maintainer/knowledge_base.html#creating-a-pre-release-build once merged into a feedstock, depend on dev for now
+    - python >=3.8
+    - openmm-torch ==1.0beta
 
 test:
   imports:
@@ -47,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - mikemhenry
+    - peastman
