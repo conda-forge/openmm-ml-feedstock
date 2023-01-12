@@ -1,5 +1,5 @@
 {% set name = "openmm-ml" %}
-{% set version = "1.0beta" %}
+{% set version = "1.0rc1" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - numpy
     - openmm ==openmm_8.0.0rc1 # TODO https://conda-forge.org/docs/maintainer/knowledge_base.html#creating-a-pre-release-build once merged into a feedstock, depend on dev for now
     - python >=3.8
-    - openmm-torch ==1.0beta
+    - openmm-torch ==1.0rc1
     - torchani >=2.2.2
 
 test:
