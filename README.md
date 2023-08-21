@@ -1,11 +1,11 @@
-About openmm-ml
-===============
+About openmm-ml-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmm-ml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/openmm/openmm-ml
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmm-ml-feedstock/blob/main/LICENSE.txt)
 
 Summary: High level API for using machine learning models in OpenMM simulations
 
