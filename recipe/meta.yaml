@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python
   run:
     - numpy
-    - openmm >=8.0.0
-    - python >=3.8
-    - openmm-torch >=1.0
-    - torchani >=2.2.2
+    - openmm
+    - python
+    - openmm-torch
+    - torchani
 
 test:
   imports:
