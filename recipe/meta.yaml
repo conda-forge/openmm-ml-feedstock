@@ -1,13 +1,13 @@
 {% set name = "openmm-ml" %}
-{% set version = "1.1" %}
+{% set version = "1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/openmm/openmm-ml.git
-  git_rev: bc414b4
+  url: https://github.com/openmm/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 444d9a1aad14bd3aa31c6ca51901844aafd25efa791c69398fd394f2ac743949
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
